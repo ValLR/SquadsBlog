@@ -45,9 +45,10 @@ document.getElementById("val").innerHTML = val.imprimir();
 
 
 function comment(mensaje){
-	var comentario = document.getElementById("texto");
-	var newComment = document.getElementById("comment");
-	newComment.innerHTML += comentario.value;
-	comentario.value = " ";
+	var userComment = document.getElementById("comentario");
+	
+	var showComment = document.getElementById("comment");
+	showComment.innerHTML += userComment.value;
+	userComment.value = " ";
 }
 
