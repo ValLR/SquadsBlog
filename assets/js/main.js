@@ -45,11 +45,9 @@ document.getElementById("val").innerHTML = val.imprimir();
 
 
 function comment(mensaje){
-	var arr = [];
-	var comentario = document.getElementById("texto").value;
-	var caja = document.getElementById("coment1");
-
-	var newComment = caja.innerHTML = comentario;
-
-	arr.push(newComment);
+	var comentario = document.getElementById("texto");
+	var newComment = document.getElementById("comment");
+	newComment.innerHTML += comentario.value;
+	comentario.value = " ";
 }
+
